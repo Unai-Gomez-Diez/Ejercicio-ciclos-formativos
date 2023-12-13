@@ -1,0 +1,17 @@
+<table class="table caption-top table-striped">
+  <thead>
+    <tr>
+      <!-- Recorre las cabeceras de la tabla -->
+      <th *ngFor="let cabecera of cabeceras">{{ cabecera }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Recorre las filas de datos -->
+    <tr *ngFor=" let dato of datos">
+      <!-- Recorre las propiedades de cada objeto en la fila -->
+      <td *ngFor="let campo of cabeceras">
+        {{ dato[campo] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
