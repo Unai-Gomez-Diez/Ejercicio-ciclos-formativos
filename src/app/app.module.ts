@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { RecuadroComponent } from './recuadro/recuadro.component';
 import { TableComponent } from './table/table.component';
 import { PanelComponent } from './panel/panel.component';
+import { CicloformativoService } from './cicloformativo.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { PanelComponent } from './panel/panel.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [CicloformativoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
